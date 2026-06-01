@@ -1,4 +1,5 @@
-import { Truck, Facebook, Instagram, Linkedin } from "lucide-react";
+import { Facebook, Instagram, Linkedin } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const units = [
   { city: "Simões Filho/BA", addr: "Polo Industrial — Entrada de Salvador" },
@@ -12,14 +13,12 @@ export function Footer() {
     <footer className="border-t border-white/10 bg-gradient-hero py-14 text-primary-foreground">
       <div className="container mx-auto grid gap-10 px-4 md:grid-cols-2 lg:grid-cols-4">
         <div>
-          <div className="flex items-center gap-2">
-            <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-accent">
-              <Truck className="h-5 w-5" />
-            </div>
-            <span className="text-lg font-bold tracking-tight">LogisNordeste</span>
+          {/* LOGO PLACEHOLDER — substitua src/assets/logo.png pelo logo oficial */}
+          <div className="inline-flex items-center justify-center rounded-xl bg-white p-3">
+            <img src={logo} alt="Santa Cruz Logística" className="h-12 w-auto" />
           </div>
           <p className="mt-4 text-sm text-white/70">
-            Soluções logísticas conectadas ao seu negócio. Especialistas no Nordeste do Brasil.
+            Conectando o Brasil, entregando o futuro. Especialistas em soluções logísticas no Nordeste.
           </p>
           <div className="mt-5 flex gap-3">
             {[Facebook, Instagram, Linkedin].map((Icon, i) => (
