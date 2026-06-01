@@ -60,7 +60,7 @@
   --ring: oklch(0.36 0.14 264);
 
   --gradient-hero: linear-gradient(135deg, oklch(0.18 0.05 258) 0%, oklch(0.32 0.13 262) 100%);
-  --gradient-accent: linear-gradient(135deg, oklch(0.74 0.19 50) 0%, oklch(0.66 0.21 35) 100%);
+  --gradient-accent: linear-gradient(135deg, oklch(0.62 0.22 260) 0%, oklch(0.5 0.24 265) 100%);
   --shadow-elegant: 0 20px 50px -20px oklch(0.22 0.07 260 / 0.4);
   --shadow-card: 0 4px 20px -8px oklch(0.3 0.13 258 / 0.15);
   --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
