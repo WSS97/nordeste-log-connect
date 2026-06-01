@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Menu, X, Truck } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const links = [
   { href: "#inicio", label: "Início" },
@@ -16,11 +17,10 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/80 backdrop-blur-lg">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
-        <a href="#inicio" className="flex items-center gap-2 font-bold text-primary">
-          <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-hero text-primary-foreground">
-            <Truck className="h-5 w-5" />
-          </div>
-          <span className="text-lg tracking-tight">LogisNordeste</span>
+        <a href="#inicio" className="flex items-center gap-3 font-bold text-primary" aria-label="Santa Cruz Logística">
+          {/* LOGO PLACEHOLDER — substitua src/assets/logo.png pelo logo oficial */}
+          <img src={logo} alt="Santa Cruz Logística" className="h-10 w-auto" />
+          <span className="sr-only">Santa Cruz Logística</span>
         </a>
         <nav className="hidden items-center gap-7 md:flex">
           {links.map((l) => (

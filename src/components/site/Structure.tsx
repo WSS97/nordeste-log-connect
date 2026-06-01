@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Warehouse, Building2, Users, Truck, TruckIcon, Wrench, MapPin } from "lucide-react";
+import { Warehouse, Building2, Users, Truck, TruckIcon, Wrench, MapPin, HardHat, CalendarClock } from "lucide-react";
 
 const stats = [
   { icon: Warehouse, value: "6.000", suffix: "m²", label: "de armazéns com 10.000 posições pallets" },
@@ -50,7 +50,38 @@ export function Structure() {
           <p className="mt-4 text-white/75">Infraestrutura robusta para suportar grandes volumes com agilidade.</p>
         </div>
 
-        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 overflow-hidden rounded-2xl border border-accent/40 bg-gradient-to-br from-accent/15 to-white/5 p-6 backdrop-blur-md md:p-8">
+          <div className="grid items-center gap-6 md:grid-cols-[auto,1fr,auto]">
+            <div className="inline-flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-accent text-accent-foreground shadow-elegant">
+              <HardHat className="h-7 w-7" />
+            </div>
+            <div>
+              <div className="inline-flex items-center gap-2 rounded-full bg-accent/20 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-accent">
+                <CalendarClock className="h-3.5 w-3.5" /> Obra em andamento
+              </div>
+              <h3 className="mt-2 text-2xl font-bold md:text-3xl">
+                Ampliação de <span className="text-accent">4.800m²</span> em construção
+              </h3>
+              <p className="mt-1 text-sm text-white/80">
+                Nova área operacional com entrega prevista para o <strong>1º semestre de 2026</strong>, dobrando nossa capacidade de armazenagem.
+              </p>
+              <div className="mt-4">
+                <div className="mb-1 flex justify-between text-xs text-white/70">
+                  <span>Progresso da obra</span><span className="font-semibold text-accent">65%</span>
+                </div>
+                <div className="h-2 w-full overflow-hidden rounded-full bg-white/10">
+                  <div className="h-full rounded-full bg-gradient-accent" style={{ width: "65%" }} />
+                </div>
+              </div>
+            </div>
+            <div className="hidden text-right md:block">
+              <div className="text-5xl font-bold text-accent">2026</div>
+              <div className="text-xs uppercase tracking-wider text-white/70">1º semestre</div>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {stats.map((s) => (
             <div key={s.label} className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-md transition-smooth hover:bg-white/10">
               <div className="mb-3 inline-flex h-11 w-11 items-center justify-center rounded-lg bg-gradient-accent text-accent-foreground">
