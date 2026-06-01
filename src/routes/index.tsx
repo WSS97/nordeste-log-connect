@@ -1,29 +1,41 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Navbar } from "@/components/site/Navbar";
+import { Hero } from "@/components/site/Hero";
+import { Tracking } from "@/components/site/Tracking";
+import { About } from "@/components/site/About";
+import { Services } from "@/components/site/Services";
+import { Structure } from "@/components/site/Structure";
+import { Clients } from "@/components/site/Clients";
+import { Contact } from "@/components/site/Contact";
+import { Footer } from "@/components/site/Footer";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Your App" },
-      { name: "description", content: "Replace this with a one-sentence description of your app." },
-      { property: "og:title", content: "Your App" },
-      { property: "og:description", content: "Replace this with a one-sentence description of your app." },
+      { title: "LogisNordeste — Soluções Logísticas no Nordeste do Brasil" },
+      { name: "description", content: "Operador logístico especializado no Nordeste: armazenagem, distribuição, transporte e rastreamento de cargas com eficiência." },
+      { property: "og:title", content: "LogisNordeste — Soluções Logísticas Conectadas ao Seu Negócio" },
+      { property: "og:description", content: "Especialistas na região Nordeste do Brasil: eficiência operacional e proteção da sua marca." },
+      { property: "og:type", content: "website" },
     ],
   }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="min-h-screen bg-background">
+      <Navbar />
+      <main>
+        <Hero />
+        <Tracking />
+        <About />
+        <Services />
+        <Structure />
+        <Clients />
+        <Contact />
+      </main>
+      <Footer />
     </div>
   );
 }
