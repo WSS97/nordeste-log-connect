@@ -12,9 +12,9 @@ import { Footer } from "@/components/site/Footer";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "LogisNordeste — Soluções Logísticas no Nordeste do Brasil" },
+      { title: "Santa Cruz Logística — Soluções Logísticas no Nordeste do Brasil" },
       { name: "description", content: "Operador logístico especializado no Nordeste: armazenagem, distribuição, transporte e rastreamento de cargas com eficiência." },
-      { property: "og:title", content: "LogisNordeste — Soluções Logísticas Conectadas ao Seu Negócio" },
+      { property: "og:title", content: "Santa Cruz Logística — Soluções Logísticas Conectadas ao Seu Negócio" },
       { property: "og:description", content: "Especialistas na região Nordeste do Brasil: eficiência operacional e proteção da sua marca." },
       { property: "og:type", content: "website" },
     ],
